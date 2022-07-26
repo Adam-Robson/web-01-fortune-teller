@@ -15,7 +15,7 @@ const questionButton = document.getElementById('question-button');
 const answerSection = document.getElementById('answer-section');
 const showQuestion = document.getElementById('show-question');
 const showAnswer = document.getElementById('show-answer');
-const crystalBall = document.getElementById('crystal-ball');
+const binoculars = document.getElementById('binoculars');
 
 const answers = [
     'Yes, definitely',
