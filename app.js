@@ -1,13 +1,3 @@
-// import functions and grab DOM elements
-
-// let state
-
-// set event listeners 
-  // get user input
-  // use user input to update state
-  // update DOM to reflect the new state
-  
-
 
 const questionSection = document.getElementById('section');
 const userQuestion = document.getElementById('user-question');
@@ -18,25 +8,22 @@ const showAnswer = document.getElementById('show-answer');
 const binoculars = document.getElementById('binoculars');
 
 const answers = [
-    'Yes, definitely',
-    'It is certain',
-    'It is decidedly so',
-    'Without a doubt',
-    'You may rely on it',
-    'As I see it, yes',
-    'Most Likely',
-    'Outlook good',
-    'Signs point to yes',
-    'Reply hazy, try again',
-    'Ask again later',
-    'Better not tell you now',
-    'Cannot predict now',
-    'Concentrate and ask again',
-    'Do not count on it',
-    'My reply is no',
-    'My sources say no',
-    'Outlook not so good',
-    'Very doubtful',
+    'you do you',
+    'certainly',
+    'No doubt',
+    'keep telling yourself that',
+    'yep',
+    'Most Like to think so',
+    'perhaps',
+    'tentatively',
+    'i don\'t know im lazy',
+    'now is not a good time',
+    'ask again in a nice way',
+    'Do not think so',
+    'No means no',
+    'probably not',
+    'nah',
+    'doubtful',
 ];
 
 // set event listeners
@@ -59,7 +46,7 @@ function toggleVisibility() {
 
 function applyAnimations() {
     showAnswer.classList.add('initial-view');
-    showAnswer.classList.add('binoculars');
+    showAnswer.add(binoculars);
 }
 
 function showRandomAnswer() {
