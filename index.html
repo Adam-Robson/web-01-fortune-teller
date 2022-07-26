@@ -12,22 +12,31 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Web App</title>
+    <title>Fortune</title>
 </head>
 
 <body>
     <header>
-        <img src="/assets/html_css_js.png">
-        <h1>Web App</h1>
+        <h1>Fortune</h1>
     </header>
 
     <main>
+        <section id="section" class="initial-view">
+            <label>Ask one question.</label>
+            <textarea id="user-question"></textarea>
+            <button id="question-button">❓</button>
+        </section>
 
+        <section id="answer-section" class="hidden">
+            <p id="show-question"></p>
+            <span id="binoculars" class="binoculars">
+            <img src="assets/binocular.png" alt="man looking through binoculars">
+            </span>
+            <p id="show-answer"></p>
+        </section>
     </main>
 
     <footer>&copy;2022 Software Developer</footer>
 
     <script type="module" src="app.js"></script>
 </body>
-
-</html>
