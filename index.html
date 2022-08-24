@@ -21,18 +21,21 @@
     </header>
 
     <main>
-        <section id="section" class="initial-view">
-            <label>Ask one question.</label>
-            <textarea id="user-question"></textarea>
-            <button id="question-button">❓</button>
+        <section id="question-section" class="initial-view">
+            <label for="question-section">Ask one question.
+                <textarea id="user-question"></textarea>
+                <button id="question-button">❓</button>
+            </label>
         </section>
 
         <section id="answer-section" class="hidden">
-            <p id="show-question"></p>
-            <span id="binoculars" class="binoculars">
-            <img src="assets/binocular.png" alt="man looking through binoculars">
-            </span>
-            <p id="show-answer"></p>
+            <div id="answer">
+                <span id="binoculars" class="binoculars">
+                    <img id="pic" src="assets/binocular.png" alt="man looking through binoculars">
+                </span>
+                <p id="show-question"></p>
+                <p id="show-answer"></p>
+            </div>
         </section>
     </main>
 

@@ -45,7 +45,8 @@ section {
     text-align: center;
     display: grid;
     color: rgb(248, 165, 135);
-    background-color: rgb(119, 147, 136)
+    background-color: rgb(119, 147, 136);
+    padding: 5px;
 }
 
 #section {
@@ -57,14 +58,16 @@ section {
     padding: 15px 20px;
     margin: 70px;
     border: 2px solid orangered;
+
 }
 
 
 
 textarea {
-    width: 250px;
-    height: 100px;
+    width: 225px;
+    height: 50px;
     resize: vertical;
+    padding: 5px;
 }
 
 .hidden {
@@ -81,6 +84,7 @@ textarea {
 #answer-section {
     padding: 20px;
 }
+
 #show-answer {
     grid-row: 2;
     grid-column: 1;
