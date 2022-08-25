@@ -17,25 +17,28 @@
 
 <body>
     <header>
-        <h1>Fortune</h1>
+        <h1>Fortune Teller</h1>
     </header>
 
     <main>
         <section id="question-section" class="initial-view">
-            <label for="question-section">Ask one question.
+            <label for="question-section">Ask a question.
                 <textarea id="user-question"></textarea>
                 <button id="question-button">❓</button>
+                <p id="show-question"></p>
             </label>
         </section>
 
         <section id="answer-section" class="hidden">
-            <div id="answer">
                 <span id="binoculars" class="binoculars">
                     <img id="pic" src="assets/binocular.png" alt="man looking through binoculars">
                 </span>
-                <p id="show-question"></p>
+                <p id="show-answer-text"></p>
                 <p id="show-answer"></p>
-            </div>
+        </section>
+
+        <section id="reset-section">
+            <button type="reset" id="reset-button" >reset</button>
         </section>
     </main>
 

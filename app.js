@@ -2,12 +2,10 @@
 const questionSection = document.getElementById('question-section');
 const userQuestion = document.getElementById('user-question');
 const questionButton = document.getElementById('question-button');
-const answer = document.getElementById('answer');
 const showQuestion = document.getElementById('show-question');
 const showAnswer = document.getElementById('show-answer');
-const binoculars = document.getElementById('binoculars');
 const answerSection = document.getElementById('answer-section');
-
+const resetButton = document.getElementById('reset-button');
 
 const answers = [
     'you do you',
@@ -40,20 +38,27 @@ function toggleVisibility() {
     answerSection.classList.remove('hidden');
 }
 
+function getRandomAnswer(array) {
+    const randomIndex = Math.floor(Math.random() * array.length);
+    const item = array[randomIndex];
+    return item; 
+}
+
 function applyAnimations() {
     showAnswer.classList.add('initial-view');
-    showAnswer.textContent = binoculars;
-    showQuestion.style.backgroundImage = "url('/assets/binocular.png')";
-    
 }
 
 function showRandomAnswer() {
     const randomAnswer = getRandomAnswer(answers);
-    answer.textContent = randomAnswer;
+    showAnswer.textContent = randomAnswer;
 }
 
-function getRandomAnswer(array) {
-    const randomIndex = Math.floor(Math.random() * array.length);
-    const item = array[randomIndex];
-    return item;
-}
+resetButton.addEventListener('click', () => {
+    showQuestion.textContent = '';
+    showAnswer.textContent = '';
+    showAnswer.classList.remove('initial-view');
+    showAnswer.textContent = '';
+    questionSection.classList.remove('hidden');
+    answerSection.classList.add('hidden');
+});
+

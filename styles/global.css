@@ -10,6 +10,7 @@ body {
     background: var(--background);
     display: grid;
     grid-template-rows: auto 1fr auto;
+    box-sizing: border-box;
 }
 
 header {
@@ -25,6 +26,7 @@ header {
 
 main {
     padding: 30px;
+    grid-template-columns: auto 50% auto;
 }
 
 footer {
@@ -47,27 +49,16 @@ section {
     color: rgb(248, 165, 135);
     background-color: rgb(119, 147, 136);
     padding: 5px;
+    
 }
-
-#section {
-    grid-row: 2;
-    grid-column: 1;
-    width: 70%;
-    justify-items: center;
-    gap: 10px;
-    padding: 15px 20px;
-    margin: 70px;
-    border: 2px solid orangered;
-
-}
-
-
 
 textarea {
+    display: block;
+    align-items: center;
+    justify-content: left;
     width: 225px;
-    height: 50px;
-    resize: vertical;
-    padding: 5px;
+    height: 30px;
+    padding: 15px;
 }
 
 .hidden {
@@ -90,7 +81,21 @@ textarea {
     grid-column: 1;
     margin-top: 9.3em;
     margin-left: 0.7em;
-    color: rgb(220, 255, 145);
+    color: rgb(248, 165, 135);
     text-shadow: 3px 3px 4px black;
     font-size: 1.25em;
 }
+
+#reset-section{
+    background-color: rgb(188, 225, 215);
+}
+
+#reset-button {
+    position: absolute;
+    bottom: 250px;
+    width: 50px;
+    border: 3px solid rgb(119, 147, 136);
+    justify-content: center;
+    align-self:center;
+      }
+
