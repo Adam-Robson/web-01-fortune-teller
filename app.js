@@ -58,6 +58,7 @@ resetButton.addEventListener('click', () => {
     showAnswer.textContent = '';
     showAnswer.classList.remove('initial-view');
     showAnswer.textContent = '';
+    userQuestion.value = '';
     questionSection.classList.remove('hidden');
     answerSection.classList.add('hidden');
 });

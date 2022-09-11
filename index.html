@@ -12,19 +12,19 @@
         href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&family=Titillium+Web:wght@200;400;600&display=swap">
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/global.css" />
-    <title>Fortune</title>
+    <title>Bad Fortune Teller</title>
 </head>
 
 <body>
     <header>
-        <h1>Fortune Teller</h1>
+        <h1>Bad Fortune Teller</h1>
     </header>
 
     <main>
         <section id="question-section" class="initial-view">
-            <label for="question-section">Ask a question.
-                <textarea id="user-question"></textarea>
-                <button id="question-button">❓</button>
+            <label id="label" for="question-section">Ask a question.
+                <input id="user-question"></input>
+                <button id="question-button">?</button>
                 <p id="show-question"></p>
             </label>
         </section>
@@ -36,10 +36,7 @@
                 <p id="show-answer-text"></p>
                 <p id="show-answer"></p>
         </section>
-
-        <section id="reset-section">
-            <button type="reset" id="reset-button" >reset</button>
-        </section>
+        <button type="reset" id="reset-button" >reset</button>
     </main>
 
     <footer>&copy;2022 Software Developer</footer>
